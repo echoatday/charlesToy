@@ -1,0 +1,74 @@
+* {
+    /* The * selector sets default attributes for every element. */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.card {
+    height: 24em;
+    width: 16em;
+    background-image: linear-gradient(#455d7a 35%, #e3e3e3 35%);
+    justify-content: center;
+    border-radius: 1em;
+    flex-wrap: nowrap;
+}
+
+.name {
+    align-items: center;
+    justify-content: start;
+    font-weight: 700;
+    padding: 1em; 
+    font-size: 24px;
+    color: #e3e3e3;
+    flex-grow: 1;
+}
+
+.image {
+    height:6em;
+    width: 6em;
+    border-radius: 5em;
+    background-color: #f95959;
+    background-size:cover;
+    border: solid #e3e3e3 0.2em;
+    color: #f95959;
+}
+
+.description {
+    align-items: start;
+    justify-content: start;
+    padding: 1em; 
+    flex-grow: 100;
+}
+
+/* spicyyy hovering */
+
+.card:hover {
+    background-image: linear-gradient(#8567be 40%, white 40%);
+    height:20em;
+    border:white solid 0.05em;
+}
+.card:hover .name {
+    flex-grow:0;
+    padding:0.2em;
+    font-weight:600;
+    color: black;
+}
+.card:hover .image {
+    background-color: black;
+    border:none;
+    box-shadow:gray 0.05em 0.05em 0.3em;
+    height:7em;
+    width:7em;
+}
+.card:hover .description {
+    font-size: 12px;
+    padding-top: 2em;
+}
+
+.image:hover {
+    background-image: url("charles.jpg");
+}

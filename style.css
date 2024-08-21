@@ -1,0 +1,23 @@
+body {
+    background-color:black;
+    display:flex;
+    flex-wrap:wrap;
+    margin: 0;
+    justify-content:center;
+    height:100%;
+    overflow:hidden;
+}
+
+div {
+    width:2vw;
+    height:2vw;
+    background-size:cover;
+}
+
+iframe {
+    position: absolute; 
+    width: 17em; 
+    height: 25em; 
+    z-index: 20;
+    border: none;
+}
